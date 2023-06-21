@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitties Page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="container-fluid border-bottom border-5">
+      <div class="row">
+        <div class="col-9 d-flex justify-content-center align-items-center">
+          <img
+            src="assets/svg/huellas.svg"
+            alt="huellitas"
+            width="80"
+            class="img-fluid me-5"
+          />
+          <h1 id="site_name" class="display-2">KITTY IMG</h1>
+        </div>
+        <div
+          class="col-3 bg-black d-flex justify-content-center"
+          id="kitty_cont"
+        >
+          <img
+            src="assets/svg/cute_kitty.svg"
+            alt="kitty image"
+            class="img-fluid"
+            width="150"
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="random_kitty">
+        <h1 class="text-center fw-bold mt-3">Random Kitties</h1>
+        <button
+          type="button"
+          class="m-3 btn btn-lg btn-warning shadow"
+          id="reloadBtn"
+        >
+          Reload
+        </button>
+        <div
+          class="container-md bg-secondary-subtle shadow-lg border border-2 border-dark-subtle rounded"
+        >
+          <div class="row d-flex justify-content-evenly">
+            <!-- content -->
+          </div>
+        </div>
+      </section>
+      <section id="favourite">
+        <h1 class="text-center fw-bold mt-3">Favourite Kitties</h1>
+        <div
+          class="container-md bg-secondary-subtle shadow-lg border border-2 border-dark-subtle rounded"
+        >
+          <div class="row d-flex justify-content-evenly">
+            <!-- favourite content -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-body-secondary bottom-0 mb-0 mt-3 p-3" id="footer">
+      <div class="container-fluid">
+        <div class="w-25 h-50 ms-auto me-auto d-flex justify-content-center">
+          <a href="#facebook">
+            <img
+              src="assets/svg/facebook.svg"
+              alt="facebook_icon"
+              width="30"
+              height="30"
+              class="me-3"
+              id="social_icon"
+            />
+          </a>
+          <a href="#instagram">
+            <img
+              src="assets/svg/instagram.svg"
+              alt="instagram_icon"
+              width="30"
+              height="30"
+              class="me-3"
+              id="social_icon"
+            />
+          </a>
+          <a href="#youtube">
+            <img
+              src="assets/svg/youtube.svg"
+              alt="youtube_icon"
+              width="30"
+              height="30"
+              class="me-3"
+              id="social_icon"
+            />
+          </a>
+          <a href="#twitter">
+            <img
+              src="assets/svg/twitter.svg"
+              alt="twitter_icon"
+              width="30"
+              height="30"
+              class="me-3"
+              id="social_icon"
+            />
+          </a>
+          <a href="#linkedin">
+            <img
+              src="assets/svg/linkedin.svg"
+              alt="linkedin_icon"
+              width="30"
+              height="30"
+              class="me-3"
+              id="social_icon"
+            />
+          </a>
+        </div>
+        <hr />
+        <h3 class="h4 text-center fw-bold">MVRCODE</h3>
+        <p class="text-center">Copyrigh © 2023 MVRCODE</p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="script/main.js"></script>
+  </body>
+</html>
