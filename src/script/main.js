@@ -21,7 +21,7 @@ const randomKitty = async () => {
         limit: 9,
       },
     });
-
+    randomSection.innerHTML = '';
     res.data.forEach((kitty) => {
       const col = document.createElement('div');
       col.classList.add('col-lg-4', 'p-2', 'd-flex', 'justify-content-center');
