@@ -22,14 +22,6 @@ const randomKitty = async () => {
       },
     });
 
-    const colRandomSection = document.querySelector(
-      '#random_kitty .container-md .row .col',
-    );
-
-    for (let index = 0; index < res.data.length; index++) {
-      colRandomSection.remove();
-    }
-
     res.data.forEach((kitty) => {
       const col = document.createElement('div');
       col.classList.add('col-lg-4', 'p-2', 'd-flex', 'justify-content-center');
@@ -135,4 +127,4 @@ btn_reload.addEventListener('click', () => {
 });
 
 randomKitty();
-// loadFavorite();
+loadFavorite();
